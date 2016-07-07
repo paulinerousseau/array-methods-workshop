@@ -42,7 +42,7 @@ function filterArray(arr,fct){
 
 // longestWord
 
-var str = 'uuhirueg wjgwrk wrgunrkrgnw';
+var str = 'I am hungry';
 function longestWord(str) {
 var words = str.split(' ');
      return words.reduce(function(a,b){
