@@ -55,3 +55,18 @@ var words = str.split(' ');
 };
 
 longestWord(str)
+
+//vowels
+var str = "I am hungry";
+function countVowels (str) {
+    return str.split("").reduce(function(a,b){
+    return a + ('aeiouAEIOU'.indexOf(b)>-1);
+},0);
+};
+
+countVowels(str);
+
+
+
+
+
