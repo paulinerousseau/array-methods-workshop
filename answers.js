@@ -60,12 +60,30 @@ longestWord(str)
 var str = "I am hungry";
 function countVowels (str) {
     return str.split("").reduce(function(a,b){
-    return a + ('aeiouAEIOU'.indexOf(b)>-1);
+    return a + ('aeiouyAEIOUY'.indexOf(b)>-1);
 },0);
 };
 
 countVowels(str);
 
+// infinity 
+
+function highLow (arr){
+     var arr = [1, -10, 20, 40, 5];
+     return arr.reduce(function(a,b){
+     if (b > a.highest){
+         a.highest=b;
+     }
+     if (b < a.lowest) {
+         a.lowest=b;
+     }
+         
+     return a;      
+    },{highest: -Infinity, lowest: Infinity});
+
+};
+
+console.log(highLow);
 
 
 
