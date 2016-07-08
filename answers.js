@@ -80,10 +80,28 @@ function highLow (arr){
          
      return a;      
     },{highest: -Infinity, lowest: Infinity});
+}
 
+
+
+//countChars
+
+var str = "hello world";
+
+function countChars(str) {
+  return str.split("").reduce(function(letterCount, letter) {
+
+    if (letterCount[letter]) {
+      letterCount[letter] += 1;
+    } else {
+      letterCount[letter] = 1;
+    }
+    return letterCount;
+  }, {});
 };
 
-console.log(highLow);
+countChars(str);
+
 
 
 
